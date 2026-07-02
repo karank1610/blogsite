@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const protect = require('../middleware/authMiddleware');
+const protect = require('../middleware/authMiddleware.js');
 const {
   getBlogs,
   getBlogById,
@@ -9,7 +9,7 @@ const {
   deleteBlog,
   toggleLike,
   addComment,
-} = require('../controllers/blogController');
+} = require('../controllers/blogController.js');
 
 router.get('/', getBlogs);
 router.get('/:id', getBlogById);
