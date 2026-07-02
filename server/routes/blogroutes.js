@@ -9,7 +9,7 @@ const {
   deleteBlog,
   toggleLike,
   addComment,
-} = require('../controllers/blogController.js');
+} = require('../controllers/blogcontroller.js');
 
 router.get('/', getBlogs);
 router.get('/:id', getBlogById);
